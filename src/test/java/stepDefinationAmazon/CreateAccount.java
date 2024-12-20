@@ -16,7 +16,7 @@ public class CreateAccount {
     WebDriver driver;
 
     private void initDriver() {
-        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver"); // Use a relative path or set in environment variables
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe"); // Use a relative path or set in environment variables
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
